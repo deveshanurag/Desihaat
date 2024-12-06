@@ -103,7 +103,7 @@ def productView(request, myid):
 
 def checkout(request):
     if request.method=="POST":
-        items_json = request.POST.get('itemsJson', '')
+        items_json = request.POST.get('itemsJson', '') 
         name = request.POST.get('name', '')
         amount = request.POST.get('amount')
         email = request.POST.get('email', '')
